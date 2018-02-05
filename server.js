@@ -13,7 +13,7 @@ mongoose.connect('mongodb://localhost/todolist'); //db connection
 
  var todoModel = mongoose.model('todoModel', todoSchema);
 
-
+//Defining Middleware
 app.use(express.static(__dirname + '/public')); //Serving Static content under the directory name called publiv
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
