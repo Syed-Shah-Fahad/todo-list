@@ -18,6 +18,7 @@ app.use(express.static(__dirname + '/public')); //Serving Static content under t
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
+//Defining API's
 app.post('/api/createPost', createPost);
 app.get('/api/getAllPosts', getAllPosts);
 app.delete('/api/deletepost:id', deletepost);
